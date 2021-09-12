@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="nav">
+            <h1>Dojo Weather</h1>
+            <ul>
+                <li onclick="alerting('Cartago')">Cartago</li>
+                <li onclick="alerting('Alajuela')">Alajuela</li>
+                <li onclick="alerting('Limon')">Limon</li>
+            </ul>
+        </div>
+        <div class="box-1">
+            <h1>San Jose</h1>
+            <label for="temp"></label>
+            <select  onchange="conversor2()" onchange="conversor()" name="temp" id="temp">
+                <option value="C">C</option>
+                <option value="F">F</option>
+            </select>
+        </div>
+        <div class="box-2">
+            <div class="day">
+                <h2>Today</h2>
+                <img src="./assets/some_rain.png" alt="">
+                <h3>Some rain</h3>
+                <div class="temps">
+                    <p id="temp" class="max">24</p>
+                    <p id="temp" class="min">18</p>
+                </div>
+            </div>
+
+            <div class="day">
+                <h2>Tomorrow</h2>
+                <img src="./assets/some_sun.png" alt="">
+                <h3>Some sun</h3>
+                <div class="temps">
+                    <p id="temp" class="max">27</p>
+                    <p id="temp" class="min">19</p>
+                </div>
+            </div>
+
+            <div class="day">
+                <h2>Friday</h2>
+                <img src="./assets/some_clouds.png" alt="">
+                <h3>Some clouds</h3>
+                <div class="temps">
+                    <p id="temp" class="max">21</p>
+                    <p id="temp" class="min">16</p>
+                </div>
+            </div>
+
+            <div class="day">
+                <h2>Saturday</h2>
+                <img src="./assets/some_sun.png" alt="">
+                <h3>Some sun</h3>
+                <div class="temps">
+                    <p id="temp" class="max">26</p>
+                    <p id="temp" class="min">21</p>
+                </div>
+            </div>
+        </div>
+    <dix class="box-3">
+        <img src="./assets/cookie.png" alt="">
+        <div class="text-box">
+            <h2>Stop! Cookie time</h2>
+            <p>We use cookies (sadly not the edible ones) to personalize contant and ads, to provide social media features and to analyse our traffic. <a href="">Read more...</a></p>
+        </div>
+        <button onclick="deleting('.box-3')">I Accept</button>
+    </dix>
+        
+    
+  <script src="./app.js"></script>
+</body>
+</html>
